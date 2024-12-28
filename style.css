@@ -233,11 +233,55 @@ button:hover {
 }
 
 .ficha-salva {
-    background-color: rgba(40, 0, 0, 0.5);
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    background-color: rgba(20, 0, 0, 0.8);
     border: 1px solid #ff0000;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.ficha-salva h3 {
+    color: #ff0000;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ff0000;
+    padding-bottom: 5px;
+}
+
+.ficha-info {
+    margin-left: 15px;
+}
+
+.atributos-admin {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.atributos-admin h4 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.vida-total {
+    margin-top: 10px;
+    color: #ff0000;
+    font-size: 1.1em;
+}
+
+.delete-btn {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #a00000;
 }
 
 textarea {

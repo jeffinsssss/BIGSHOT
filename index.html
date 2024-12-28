@@ -37,9 +37,11 @@
 
             <div class="atributos">
                 <h2>Atributos</h2>
-                <p class="atributos-info">Você tem 5 pontos para distribuir entre os atributos. Distribua-os com sabedoria ou será eliminado!</p>
-                <p class="pontos-restantes">Pontos restantes: <span id="pontosRestantes">5</span></p>
-                
+                <div class="pontos-info">
+                    <p>Pontos Restantes: <span id="pontosRestantes">5</span></p>
+                    <p>Vida Total: <span id="vidaTotal">10</span></p>
+                </div>
+
                 <div class="atributo">
                     <label for="inteligencia">Inteligência:</label>
                     <input type="number" id="inteligencia" min="0" max="5" value="0" required>
@@ -61,12 +63,7 @@
                 </div>
             </div>
 
-            <div class="vida">
-                <label>Vida Total:</label>
-                <span id="vidaTotal">10</span>
-            </div>
-
-            <button type="submit">Gerar Ficha</button>
+            <button type="submit">Criar Ficha</button>
         </form>
     </div>
 
@@ -75,8 +72,9 @@
         <div id="fichasSalvas"></div>
     </div>
 
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
     <script src="script.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
 </body>
 </html>
