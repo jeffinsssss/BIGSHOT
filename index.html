@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>BIGSHOT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Nosifer&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glitch-overlay"></div>
+    <div class="container">
+        <h1>BIGSHOT</h1>
+        <div class="descricao-jogo">
+            OS JOGOS BIGSHOT ESTÃO PRESTES A COMEÇAR, GARANTA SUA FORTUNA DE 10 MILHÕES DE DÓLARES AGORA MESMO.
+        </div>
+        
+        <form id="fichaForm">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="trabalho">Trabalho:</label>
+                <input type="text" id="trabalho" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" required></textarea>
+            </div>
+
+            <div class="atributos">
+                <h2>Atributos</h2>
+                <p class="atributos-info">Você tem 5 pontos para distribuir entre os atributos. Distribua-os com sabedoria ou será eliminado!</p>
+                <p class="pontos-restantes">Pontos restantes: <span id="pontosRestantes">5</span></p>
+                
+                <div class="atributo">
+                    <label for="inteligencia">Inteligência:</label>
+                    <input type="number" id="inteligencia" min="0" max="5" value="0" required>
+                </div>
+
+                <div class="atributo">
+                    <label for="forca">Força:</label>
+                    <input type="number" id="forca" min="0" max="5" value="0" required>
+                </div>
+
+                <div class="atributo">
+                    <label for="agilidade">Agilidade:</label>
+                    <input type="number" id="agilidade" min="0" max="5" value="0" required>
+                </div>
+
+                <div class="atributo">
+                    <label for="determinacao">Determinação:</label>
+                    <input type="number" id="determinacao" min="0" max="5" value="0" required>
+                </div>
+            </div>
+
+            <div class="vida">
+                <label>Vida Total:</label>
+                <span id="vidaTotal">10</span>
+            </div>
+
+            <button type="submit">Gerar Ficha</button>
+        </form>
+    </div>
+
+    <div id="adminPanel" class="admin-panel">
+        <h2>Painel Administrativo</h2>
+        <div id="fichasSalvas"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+</body>
+</html>
